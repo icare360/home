@@ -1,4 +1,4 @@
-/* Global layout */
+/* --- Global layout --- */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -14,7 +14,7 @@ body {
   padding: 20px 30px;
 }
 
-/* Header / Nav */
+/* --- Header / Nav --- */
 header {
   background: #ffffff;
   border-bottom: 1px solid #ddd;
@@ -43,19 +43,71 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Section */
+/* --- Banner / Hero Section --- */
+.banner {
+  background-color: #f5f7fa; /* grey background */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left; /* align text left like Shop page */
+}
+
+.banner img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* --- Section Styling --- */
 section {
   margin-top: 30px;
 }
 
 h2 {
-  margin-top: 30px;
+  margin-top: 20px;
   color: #333;
   border-bottom: 2px solid #ddd;
   padding-bottom: 6px;
 }
 
-/* Footer */
+/* --- Shop & Tools links --- */
+.shop-links, .tools-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shop-links .product, .tools-links li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  color: #0366d6;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.shop-links .product:hover, .tools-links li:hover {
+  background-color: #f0f4f8;
+}
+
+.shop-links img {
+  width: 70px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.shop-links span {
+  font-size: 1.05em;
+}
+
+/* --- Footer --- */
 footer {
   margin-top: 60px;
   text-align: center;
