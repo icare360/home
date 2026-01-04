@@ -5,6 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shop — iCare360</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Shop-specific tweaks */
+    .banner-shop {
+      background: #f5f7fa url('banner.jpg') center/cover no-repeat;
+      padding: 40px 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .banner-shop h2 {
+      margin-top: 0;
+      font-size: 2.2em;
+      color: #333;
+    }
+
+    .banner-shop p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    .shop-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .shop-links .product {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 10px;
+      border-radius: 6px;
+      background: #fff;
+      text-decoration: none;
+      color: #0366d6;
+      border: 1px solid #ddd;
+    }
+
+    .shop-links .product:hover {
+      background-color: #f0f4f8;
+    }
+
+    .shop-links img {
+      width: 70px;
+      height: auto;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+
+    .shop-links span {
+      font-size: 1.05em;
+    }
+  </style>
 </head>
 <body>
 
@@ -17,25 +72,13 @@
   </nav>
 </header>
 
-<section class="banner">
+<section class="banner-shop">
   <h2>iCare360 Merchandise</h2>
   <p>Support iCare360 with official merchandise available through our Zazzle store.</p>
+</section>
 
+<div class="container">
   <div class="shop-links">
-    <div class="product">
-      <a href="https://www.zazzle.com/store/icare360" target="_blank">
-        <img src="zazzle-shop.jpg" alt="iCare360 Store" />
-        <span>🛍 Visit the iCare360 Zazzle Store</span>
-      </a>
-    </div>
-
-    <div class="product">
-      <a href="https://www.zazzle.com/collections/119140545005593289" target="_blank">
-        <img src="zazzle-collection.jpg" alt="iCare360 Collection" />
-        <span>📦 View the iCare360 Merchandise Collection</span>
-      </a>
-    </div>
-
     <div class="product">
       <a href="https://www.zazzle.com/icare360_i_care_4_u_cap-256612864286435096" target="_blank">
         <img src="cap.jpg" alt="I Care 4 U Cap" />
@@ -57,7 +100,7 @@
       </a>
     </div>
   </div>
-</section>
+</div>
 
 <footer>
   iCare360 &copy; 2026
