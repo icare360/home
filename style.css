@@ -46,7 +46,7 @@ nav a:hover {
 /* --- Banner / Hero Section --- */
 .banner {
   background: url('banner.jpg') center/cover no-repeat;
-  height: 200px; /* adjust if needed */
+  height: 400px; /* doubled height */
   border-radius: 8px;
   margin: 20px 0;
   display: flex;
@@ -55,24 +55,23 @@ nav a:hover {
   color: #fff;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  padding: 0 20px; /* optional: keeps text from touching edges */
 }
 
 .banner h2 {
   font-size: 2em;
   margin: 0;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 .banner p {
-  font-size: 1.1em;
-  margin-top: 5px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  font-size: 1.2em;
+  margin-top: 10px;
 }
 
 /* --- Section Styling --- */
 section {
   margin-top: 30px;
-  text-align: left; /* compact layout like Shop */
+  text-align: left; /* compact layout like shop */
 }
 
 h2 {
