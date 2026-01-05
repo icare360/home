@@ -18,9 +18,8 @@ body {
 header {
   background: #ffffff;
   border-bottom: 1px solid #ddd;
+  padding: 20px 0;
   text-align: center;
-  padding: 10px 0;
-  position: relative;
 }
 
 header h1 {
@@ -44,12 +43,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* --- Banner Section --- */
+/* --- Banner / Hero Section --- */
 .banner {
   background: url('banner.jpg') center/cover no-repeat;
-  height: 200px; /* adjust height to fit your banner */
+  height: 200px; /* adjust if needed */
   border-radius: 8px;
-  margin: 20px auto;
+  margin: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,17 +60,19 @@ nav a:hover {
 .banner h2 {
   font-size: 2em;
   margin: 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 .banner p {
   font-size: 1.1em;
   margin-top: 5px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 /* --- Section Styling --- */
 section {
   margin-top: 30px;
-  text-align: left; /* compact, left-aligned like Shop page */
+  text-align: left; /* compact layout like Shop */
 }
 
 h2 {
@@ -103,20 +104,18 @@ h2 {
   background-color: #f0f4f8;
 }
 
-/* Reduce image sizes for shop & collection items */
 .shop-links img {
   width: 70px;
   height: auto;
   border-radius: 6px;
   border: 1px solid #ddd;
-  display: block;
 }
 
 .shop-links span {
   font-size: 1.05em;
 }
 
-/* Tools list styling */
+/* Tools links list styling */
 .tools-links li {
   list-style: none;
   cursor: pointer;
