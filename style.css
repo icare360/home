@@ -46,7 +46,8 @@ nav a:hover {
 /* --- Banner / Hero Section --- */
 .banner {
   background: url('banner.jpg') center/cover no-repeat;
-  height: 400px; /* doubled height */
+  height: 400px;       /* desktop height */
+  min-height: 250px;   /* minimum height for small screens */
   border-radius: 8px;
   margin: 20px 0;
   display: flex;
@@ -55,7 +56,7 @@ nav a:hover {
   color: #fff;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  padding: 0 20px; /* optional: keeps text from touching edges */
+  padding: 0 20px;
 }
 
 .banner h2 {
@@ -128,4 +129,42 @@ footer {
   color: #777;
   padding: 15px 0;
   border-top: 1px solid #ddd;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+  .banner {
+    height: 300px;  /* smaller on tablets */
+    padding: 0 10px;
+  }
+
+  .banner h2 {
+    font-size: 1.6em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
+
+  .shop-links img {
+    width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 200px; /* mobile phones */
+  }
+
+  .banner h2 {
+    font-size: 1.3em;
+  }
+
+  .banner p {
+    font-size: 0.9em;
+  }
+
+  .shop-links img {
+    width: 50px;
+  }
 }
